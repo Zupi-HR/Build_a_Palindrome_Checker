@@ -1,22 +1,45 @@
+* {
+  padding: 0;
+  margin: 0; 
+  box-sizing: border-box; 
+}
+
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
 body {
     background-color: #0A0A23;
     padding: 40px;
     color: #ffffff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .container {
     display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .freecodecamp_logo {
     width: 300px;
 }
 
+h1 {
+    font-size: 2.6rem; 
+    font-weight: bold;
+}
+
 form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: fit-content;
+    width: fit-content; 
     background-color: #ffffff;
     border-radius: 10px;
     padding: 20px 60px;
@@ -24,8 +47,26 @@ form {
     align-items: center;
 }
 
+.input-group {
+    display: flex;
+    gap: 15px;
+    width: 400px;
+    align-items: center;
+}
+
 label {
     color: #0A0A23;
+}
+
+input[type="text"] {
+    border: 2px solid #5a01a7;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    flex-grow: 3;
+    font-size: 1.2rem;
+    text-align: center;
+    height: fit-content;
 }
 
 button {
@@ -35,4 +76,21 @@ button {
     border-radius: 15px;
     outline: none;
     border: none;
+    flex-grow: 1;
+}
+
+.palindrome-definition-container {
+    background: #00471B;
+    padding: 0px 40px;
+    width: 400px;
+    text-align: center;
+    white-space: pre-line;
+    font-size: 1.5rem;
+   width: 500px;
+   border-radius: 10px; 
+   height: auto;
+}
+
+.palindrome-definition-container p {
+    
 }
